@@ -16,7 +16,7 @@ Before you begin, ensure you have installed laravel in your machine. To install 
     ```
 2. Navigate to the project directory:
     ```sh
-    cd to-do-list-app
+    cd toDoListApp
     ```
 3. Install dependencies:
     ```sh
