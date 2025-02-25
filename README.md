@@ -30,6 +30,6 @@ Before you begin, ensure you have installed laravel in your machine. To install 
     ```
 
 ### Usage
-- To add a task, click on the "Add Task" button and fill in the task details.
+- To add a task, click on the "Create Task" button or on dashboard and fill in the task details.
 - To edit a task, click on the "Edit" button next to the task you want to modify.
 - To delete a task, click on the "Delete" button next to the task you want to remove.
