@@ -12,7 +12,7 @@ Before you begin, ensure you have installed laravel in your machine. To install 
 ### Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/to-do-list-app.git
+    git clone https://github.com/Swayam-Ghimire/to-do-list-app.git
     ```
 2. Navigate to the project directory:
     ```sh
