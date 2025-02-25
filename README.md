@@ -22,8 +22,12 @@ Before you begin, ensure you have installed laravel in your machine. To install 
     ```sh
     npm install && npm run build
     ```
+4. Run migration files and seed the table
+    ```sh
+    php artisan migrate:fresh --seed
+    ```
 
-4. Run the application:
+5. Run the application:
     ```sh
     php artisan serve
     npm run dev

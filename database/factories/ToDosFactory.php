@@ -19,11 +19,11 @@ class ToDosFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->sentence(4),
-            'description' => fake()->paragraph(3),
-            'is_completed' => fake()->boolean(),
-            'due_date' => fake()->dateTimeBetween('now', '+1 month')->format('Y-m-d'),
-            'difficulty_id' => Difficulty::inRandomOrder()->first()->value,
+            // 'title' => fake()->sentence(4),
+            // 'description' => fake()->paragraph(3),
+            // 'is_completed' => fake()->boolean(),
+            // 'due_date' => fake()->dateTimeBetween('now', '+1 month')->format('Y-m-d'),
+            // 'difficulty_id' => Difficulty::inRandomOrder()->first()->value,
         ];
     }
 }

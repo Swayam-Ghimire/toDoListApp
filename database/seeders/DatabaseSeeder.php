@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             DifficultySeeder::class,
-            ToDosSeeder::class,
+            // ToDosSeeder::class,
         ]);
     }
 }
