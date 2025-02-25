@@ -1,0 +1,65 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+@layer components {
+    /* Navbar Styles */
+    nav {
+        @apply bg-orange-400 text-white p-2 shadow-lg; /* Reduced padding (py-2 instead of p-4) */
+        @apply flex justify-between items-center; /* Aligns h1 and ul on opposite ends */
+    }
+
+    nav ul {
+        @apply flex space-x-4; /* Keeps the list items horizontal with spacing */
+    }
+
+    nav ul li a {
+        @apply hover:text-blue-200 transition duration-300;
+    }
+
+    /* Card Styles */
+    .card {
+        @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300;
+    }
+
+    .highlighted {
+        @apply bg-red-100 border-l-4 border-red-500;
+    }
+
+    .btn {
+        @apply mt-4 inline-block bg-orange-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 text-sm;
+    }
+
+    /* Content Styles */
+    .content {
+        @apply p-8 max-w-4xl mx-auto;
+    }
+
+    /* Show Page Styles */
+    h1 {
+        @apply text-2xl font-bold mb-4;
+    }
+
+    h3 {
+        @apply text-lg font-bold mb-4;
+    }
+
+    p {
+        @apply text-sm leading-relaxed mb-4;
+    }
+
+    /* Form Styles */
+    .form-group {
+        @apply mb-4;
+    }
+
+    .form-control {
+        @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent;
+    }
+
+    label {
+        @apply block text-gray-700 text-sm font-bold mb-2;
+    }
+}
