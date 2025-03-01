@@ -1,6 +1,4 @@
 <x-layout>
-    {{-- <p>Hello this is homepage which is navigated from routes after clicking on the link in the welcome page.</p><br>
-    <a href="/" class="btn">Back to Welcome Page</a><br> --}}
     @if($details->isEmpty())
         <div class="bg-white-100 px-4 py-2 rounded text-sm text-red-700">
             <p class="my-0">No tasks found.</p><br>

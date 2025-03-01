@@ -1,7 +1,9 @@
 /* styles.css */
+@import 'form.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Custom Styles */
 @layer components {
@@ -30,6 +32,7 @@
 
     .btn {
         @apply mt-4 inline-block bg-orange-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 text-sm;
+        cursor:pointer;
     }
 
     /* Content Styles */
@@ -49,17 +52,4 @@
     p {
         @apply text-sm leading-relaxed mb-4;
     }
-
-    /* Form Styles */
-    .form-group {
-        @apply mb-4;
-    }
-
-    .form-control {
-        @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent;
-    }
-
-    label {
-        @apply block text-gray-700 text-sm font-bold mb-2;
-    }
-}
+} 
