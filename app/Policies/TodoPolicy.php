@@ -9,14 +9,6 @@ use App\Models\User;
 class TodoPolicy
 {
     /**
-     * Determine whether the user can view any models.
-     */
-    public function viewAny(User $user): bool
-    {
-        return true;
-    }
-
-    /**
      * Determine whether the user can view the model.
      */
     public function view(User $user, ToDos $toDos): bool
@@ -37,7 +29,7 @@ class TodoPolicy
      */
     public function update(User $user, ToDos $toDos): bool
     {
-        return $toDos ? $user->id === $toDos->user_id : false;
+        return $user->id === $toDos->user_id;
     }
 
     /**
@@ -51,21 +43,5 @@ class TodoPolicy
     public function complete(User $user, ToDos $toDos): bool
     {
         return $user->id === $toDos->user_id;
-    }
-
-    /**
-     * Determine whether the user can restore the model.
-     */
-    public function restore(User $user, ToDos $toDos): bool
-    {
-        return false;
-    }
-
-    /**
-     * Determine whether the user can permanently delete the model.
-     */
-    public function forceDelete(User $user, ToDos $toDos): bool
-    {
-        return false;
     }
 }
