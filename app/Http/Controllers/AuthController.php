@@ -28,8 +28,8 @@ class AuthController extends Controller
             'password'=>'required|string|min:8|max:15|confirmed',
         ]);
         $user = User::create($validate);
-        Auth::login($user);
-        return redirect()->route('auth.login');
+        // Auth::login($user);
+        return redirect()->route('auth.login')->with(['success'=>'User Registered Successfully! Please log in']);
     }   
 
     public function login(Request $request){
@@ -57,4 +57,3 @@ class AuthController extends Controller
     }
 }
 
-// why can I see home page even after I logged out

@@ -26,8 +26,13 @@ Before you begin, ensure you have installed Laravel on your machine. For install
     npm install
     ```
 5. Add a `.env` file to the root folder and copy the contents of `.env.example` into the `.env` file.
+    ```sh
+    cp .env.example .env
+    ```
 
-6. Create a `database.sqlite` file within the database folder.
+6. ```sh
+    php artisan key:generate
+    ```
 
 7. Run migration files and seed the table:
     ```sh

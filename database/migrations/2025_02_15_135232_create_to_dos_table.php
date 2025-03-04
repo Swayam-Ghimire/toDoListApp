@@ -20,6 +20,8 @@ return new class extends Migration
             $table->date('due_date')->nullable();
             $table->unsignedBigInteger('difficulty_id');
             $table->foreign('difficulty_id')->references('value')->on('difficulties')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->constrained()->onDelete('cascade');
         });
     }
 
